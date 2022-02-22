@@ -1,0 +1,115 @@
+<mat-card>
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="vorname"
+        ngModel
+        required
+        minlength="3"
+        placeholder="Vorname"
+        #vorname="ngModel"
+      />
+      <mat-error *ngIf="vorname.invalid">Please enter a post title.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="nachname"
+        ngModel
+        required
+        minlength="3"
+        placeholder="Nachname"
+        #nachname="ngModel"
+      />
+      <mat-error *ngIf="nachname.invalid">Please enter a post title.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="adresse"
+        ngModel
+        required
+        minlength="3"
+        placeholder="Adresse"
+        #adresse="ngModel"
+      />
+      <mat-error *ngIf="adresse.invalid">Please enter a post title.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="hausnummer"
+        ngModel
+        required
+        minlength="3"
+        placeholder="Hausnummer"
+        #hausnummer="ngModel"
+      />
+      <mat-error *ngIf="hausnummer.invalid"
+        >Please enter a post title.</mat-error
+      >
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="postleitzahl"
+        ngModel
+        required
+        minlength="3"
+        placeholder="Postleitzahl"
+        #postleitzahl="ngModel"
+      />
+      <mat-error *ngIf="postleitzahl.invalid"
+        >Please enter a post title.</mat-error
+      >
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="stadt"
+        ngModel
+        required
+        minlength="3"
+        placeholder="Stadt"
+        #stadt="ngModel"
+      />
+      <mat-error *ngIf="stadt.invalid">Please enter a post title.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="telefonnummer"
+        ngModel
+        required
+        minlength="3"
+        placeholder="Telefonnummer"
+        #telefonnummer="ngModel"
+      />
+      <mat-error *ngIf="telefonnummer.invalid"
+        >Please enter a post title.</mat-error
+      >
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="email"
+        ngModel
+        required
+        minlength="3"
+        placeholder="E-Mail"
+        #email="ngModel"
+      />
+      <mat-error *ngIf="email.invalid">Please enter a post title.</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit">Save Post</button>
+  </form>
+</mat-card>
